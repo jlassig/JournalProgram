@@ -73,7 +73,6 @@ class MoodTracker {
         return response
     }
 
-
     private fun displayMoods(): String{
 
         println("1 - happy")
