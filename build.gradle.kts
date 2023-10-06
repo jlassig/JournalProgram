@@ -1,6 +1,8 @@
 plugins {
     kotlin("jvm") version "1.9.0"
     application
+    kotlin("plugin.serialization") version "1.9.0"
+
 }
 
 group = "org.example"
@@ -12,6 +14,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    //implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
 }
 
 tasks.test {
@@ -35,3 +39,4 @@ tasks.jar {
     }
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
+

@@ -1,0 +1,170 @@
+[
+    {
+        "entryDate": "2023-01-10",
+        "mood": "unmotivated",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling unmotivated.",
+        "entryText": "I have a lot of routine tasks at work lately, and it's challenging to stay enthusiastic."
+    },
+    {
+        "entryDate": "2023-03-20",
+        "mood": "happy",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling happy.",
+        "entryText": "I received praise from my boss for my recent project, and it made my day!"
+    },
+    {
+        "entryDate": "2023-04-03",
+        "mood": "unmotivated",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling unmotivated.",
+        "entryText": "I've been assigned repetitive tasks at work, and it's challenging to stay engaged and motivated."
+    },
+    {
+        "entryDate": "2023-04-12",
+        "mood": "unmotivated",
+        "moodItem": "family",
+        "promptInfo": "Tell me about your family and why you're feeling unmotivated.",
+        "entryText": "My family has been going through a tough time, and it's affecting my energy and enthusiasm for other things."
+    },
+    {
+        "entryDate": "2023-04-22",
+        "mood": "unmotivated",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling unmotivated.",
+        "entryText": "I've been assigned repetitive tasks at work, and it's hard to stay motivated."
+    },
+    {
+        "entryDate": "2023-05-10",
+        "mood": "angry",
+        "moodItem": "school",
+        "promptInfo": "Tell me about your school and why you're feeling angry.",
+        "entryText": "I had a difficult exam today, and I couldn't answer some questions."
+    },
+    {
+        "entryDate": "2023-05-15",
+        "mood": "angry",
+        "moodItem": "family",
+        "promptInfo": "Tell me about your family and why you're feeling angry.",
+        "entryText": "My family is going through a tough time, and I'm worried about them."
+    },
+    {
+        "entryDate": "2023-05-20",
+        "mood": "sad",
+        "moodItem": "friends",
+        "promptInfo": "Tell me about your friends and why you're feeling sad.",
+        "entryText": "My friends canceled our plans at the last minute, and it upset me."
+    },
+    {
+        "entryDate": "2023-06-15",
+        "mood": "sad",
+        "moodItem": "friends",
+        "promptInfo": "Tell me about your friends and why you're feeling sad.",
+        "entryText": "My friends canceled our plans at the last minute, and it upset me."
+    },
+    {
+        "entryDate": "2023-06-20",
+        "mood": "sad",
+        "moodItem": "church",
+        "promptInfo": "Tell me about your church and why you're feeling sad.",
+        "entryText": "I had a disagreement at church that left me feeling upset."
+    },
+    {
+        "entryDate": "2023-08-02",
+        "mood": "unmotivated",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling unmotivated.",
+        "entryText": "I've been working long hours at the office, and it's taking a toll on my motivation and energy."
+    },
+    {
+        "entryDate": "2023-08-17",
+        "mood": "unmotivated",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling unmotivated.",
+        "entryText": "There's a lack of clear direction on our projects at work, which makes it hard to stay motivated."
+    },
+    {
+        "entryDate": "2023-08-29",
+        "mood": "sad",
+        "moodItem": "school",
+        "promptInfo": "Tell me about your school and why you're feeling sad.",
+        "entryText": "I missed an important lecture at school due to illness, and I'm worried about falling behind."
+    },
+    {
+        "entryDate": "2023-08-31",
+        "mood": "unmotivated",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling unmotivated.",
+        "entryText": "I'm stuck in a monotonous routine at work, and it's draining my enthusiasm."
+    },
+    {
+        "entryDate": "2023-09-09",
+        "mood": "happy",
+        "moodItem": "family",
+        "promptInfo": "Tell me about your family and why you're feeling happy.",
+        "entryText": "Our family vacation was a blast, and I'm filled with gratitude for these moments."
+    },
+    {
+        "entryDate": "2023-09-10",
+        "mood": "happy",
+        "moodItem": "friends",
+        "promptInfo": "Tell me about your friends and why you're feeling happy.",
+        "entryText": "I had a fantastic time with my friends at a weekend getaway, and it lifted my spirits."
+    },
+    {
+        "entryDate": "2023-09-12",
+        "mood": "happy",
+        "moodItem": "family",
+        "promptInfo": "Tell me about your family and why you're feeling happy.",
+        "entryText": "Helped my family with a project, and the sense of togetherness brings happiness."
+    },
+    {
+        "entryDate": "2023-09-15",
+        "mood": "happy",
+        "moodItem": "family",
+        "promptInfo": "Tell me about your family and why you're feeling happy.",
+        "entryText": "Received a heartwarming letter from a family member, and it made my day."
+    },
+    {
+        "entryDate": "2023-09-23",
+        "mood": "happy",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling happy.",
+        "entryText": "I had a successful presentation at work today, and it made me feel accomplished."
+    },
+    {
+        "entryDate": "2023-10-04",
+        "mood": "happy",
+        "moodItem": "school",
+        "promptInfo": "Tell me about your school and why you're feeling happy.",
+        "entryText": "I got this assignment figured out."
+    },
+    {
+        "entryDate": "2023-10-04",
+        "mood": "",
+        "moodItem": "",
+        "promptInfo": "What were you most grateful for today and why?",
+        "entryText": "The view outside my window because it's beautiful."
+    },
+    {
+        "entryDate": "2023-10-04",
+        "mood": "tired",
+        "moodItem": "school",
+        "promptInfo": "Tell me about your school and why you're feeling tired.",
+        "entryText": "I've been working on school all day."
+    },
+    {
+        "entryDate": "2023-10-06",
+        "mood": "motivated",
+        "moodItem": "school",
+        "promptInfo": "Tell me about your school and why you're feeling motivated.",
+        "entryText": "I am graduating soon."
+    },
+    {
+        "entryDate": "2023-10-06",
+        "mood": "",
+        "moodItem": "",
+        "promptInfo": "Write about an experience you had with one of your siblings.",
+        "entryText": "Yesterday I ate lunch with my brother at Zupa's. He told me about his new job at Microsoft and how much that means to his family. I'm so happy for him. "
+    }
+]
