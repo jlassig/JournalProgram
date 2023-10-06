@@ -4,7 +4,6 @@ import kotlin.random.Random
 class PromptPicker {
 //this class  picks a random prompt or creates a prompt for the user based on their mood when writing.
 
-
     private val promptList = listOf<String>("What were you most grateful for today and why?",
         "Write about an experience you had with your grandma or grandpa.",
         "Describe in detail one of your favorite kinds of foods.",
@@ -36,10 +35,8 @@ class PromptPicker {
         return (promptList[index])
 
     }
-    //this creates a prompt based on the mood of the user and what is on their mind.
+    //this creates a prompt based on the mood of the user and what is on their mind at the time.
     fun createAPrompt(mood: String?, moodItem: String?): String{
-
-
         val moodPrompt =
             if (moodItem == "body") {
             "Why are you feeling ${mood} about your body?"

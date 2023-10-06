@@ -8,13 +8,14 @@ import java.io.IOException
 
 
 class Journal {
-    //this is going to have a date object, entry that the user fills in
-    //mood that the user fills in, and a "title".
 
     val today = LocalDate.now()
     val fileName = "src/main/kotlin/entries.json"
     val entryFile = File(fileName)
 
+    //this function gets the users mood and what they are thinking about. Then a prompt is created in the prompt
+    //picker which is then displayed. the user writes their entry. The date, mood, moodItem, prompt, and entry are
+    //all saved.
     fun writeEntry(){
         //getMood
         println("What is your mood today?")
@@ -25,11 +26,6 @@ class Journal {
         val moodItem = moodTracker.getMoodItem()
         val promptInfo = PromptPicker().createAPrompt(mood, moodItem)
         println(promptInfo)
-
-        //get the info from the user then save to file.
-        //the user needs to enter mood, entry,
-        //date and title are autofilled in
-        // title for this is "freestyle"
 
         val entryText = readLine()
 
@@ -42,10 +38,9 @@ class Journal {
         }
     }
 
+//this function gets a random prompt from the promptPicker and displays it. the user writes their message. the date,
+    //prompt and entry are then saved.
     fun writeToPromptEntry(){
-
-        //get a prompt for the user to write to, then save to the file
-        //title for this is the prompt.
         val mood = ""
         val moodItem = ""
         val promptInfo = PromptPicker().getAPrompt()
@@ -61,8 +56,8 @@ class Journal {
         }
     }
 
+    //this goes to read from the file and displays the entries
     fun displayEntries(){
-        //this goes to read from the file and displays the entries
         val entriesList = loadEntryList()
         for(entry in entriesList)
         {
@@ -76,11 +71,12 @@ class Journal {
         println("-".repeat(30))
     }
 
+    //this function saves the entry to the file using the writeFile function. first we get all the exisitng entries
+    //by loading them into a list. then we add our new entry, make the list in pretty json(indented and
+    //new line, and then write to the file.
     private fun saveEntry(newEntry : Entry?) {
-        //this function writes to a file
+
         val existingEntries = loadEntryList()
-
-
         if (newEntry != null) {
             existingEntries.add(newEntry)
         }
@@ -92,6 +88,7 @@ class Journal {
         writeJsonFile(updatedEntriesList)
     }
 
+    //this loads the list of entries that we can use for displaying
    private fun loadEntryList(): MutableList<Entry>{
         return if(entryFile.exists()){
             try {
@@ -106,6 +103,7 @@ class Journal {
         }
     }
 
+    //this writes to the file where the entries are stored.
     private fun writeJsonFile( entries: String){
         try {
             entryFile.writeText(entries)

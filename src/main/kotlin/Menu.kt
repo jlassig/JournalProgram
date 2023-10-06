@@ -1,6 +1,7 @@
 class Menu {
     private val journal = Journal()
 
+    //this is our starting point that displays the menu and gets from the user which menu option to run
     fun start(){
         println("*****Journal Program*****")
         do{
@@ -18,7 +19,6 @@ class Menu {
         } while (menuChoice != "5")
     }
     private fun displayMenu(): String?{
-
         //menu choices:
         println("1 - Write Entry")
         println("2 - Write To Prompt")

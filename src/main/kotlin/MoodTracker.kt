@@ -3,9 +3,11 @@ import java.time.format.DateTimeFormatter
 
 class MoodTracker {
 
+    //getting the user's mood. They can either use one of the suggested or use other and type in their mood.
     fun getMood(): String{
 
         var mood  = ""
+        val instructions = "Enter your mood (max 15 characters): "
 
         do{
             var isNumber = true
@@ -17,10 +19,7 @@ class MoodTracker {
                 "4" -> mood = "angry"
                 "5" -> mood = "motivated"
                 "6" -> mood = "unmotivated"
-                "7" -> {
-                    println("Enter your mood (use only one word): ")
-                    mood = readln()
-                }
+                "7" -> mood = checkStringLength(instructions)
                 else -> {
                     isNumber = false
                     println("Please enter a number")
@@ -30,9 +29,12 @@ class MoodTracker {
         return mood
     }
 
+    //this gets what is on the user's mind when they wrote about their mood. I don't want the user to say that
+    //the moodItem CAUSES their mood, but this item would be the thing on their mind when they say they are sad or happy, etc.
     fun getMoodItem():String{
 
         var moodItem = ""
+        val instructions = "What is on your mind(max 15 characters): "
 
         do{
             var isNumber = true
@@ -44,10 +46,7 @@ class MoodTracker {
                 "4" -> moodItem = "friends"
                 "5" -> moodItem = "church"
                 "6" -> moodItem = "body"
-                "7" -> {
-                    println("What is on your mind(use only one word): ")
-                    moodItem = readln()
-                }
+                "7" -> moodItem = checkStringLength(instructions)
                 else -> {
                     isNumber = false
                     println("Please enter a number")
@@ -56,6 +55,22 @@ class MoodTracker {
         } while (!isNumber)
         return moodItem
 
+    }
+
+    //checker to make sure the user doesn't put in a crazy long string for their mood or moodItem, or nothing at all
+    private fun checkStringLength(instructions: String):String{
+        var response = ""
+
+        do{
+            println(instructions)
+            response = readln()
+            if(response.isEmpty()){
+                println("Invalid response. Try again.")
+            }
+            else if (response.length > 15){
+                println("Your answer is too long. Try again.")}
+        }while(response.isEmpty() || response.length > 15)
+        return response
     }
 
 
@@ -68,7 +83,7 @@ class MoodTracker {
         println("5 - motivated")
         println("6 - unmotivated")
         println("7 - other")
-        val moodNumber: String? = readLine()
+        val moodNumber: String? = readlnOrNull()
         //checking to see if the moodNumber is null
         if(moodNumber.isNullOrBlank()){
             println("Please try again. ")
@@ -86,7 +101,7 @@ class MoodTracker {
         println("5 - church")
         println("6 - body")
         println("7 - other")
-        val moodItemNum: String? = readLine()
+        val moodItemNum: String? = readlnOrNull()
         //checking to see if the moodItemNum is null
         if(moodItemNum.isNullOrBlank()){
             println("Please try again. ")
@@ -186,15 +201,11 @@ class MoodTracker {
         }else{
             monthName
         }
-
-
         println("| $modifiedMonth\t| $modifiedFrequentMood\t | $mostFrequentMoodItem")
-
-       //println("| $numOfMonths month(s) ago\t| $modifiedFrequentMood\t | $mostFrequentMoodItem")
 
     }
 
-//this function gets the target month. so if the user is looking at 6 months away, 6 gets entered as an argument for monthInt
+//this function gets the target month. so if the program is looking at 6 months away, 6 gets entered as an argument for monthInt
     fun getTargetMonth(monthInt : Int):Int{
 
         //for testing of other dates:
