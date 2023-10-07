@@ -33,6 +33,7 @@ enthused about journaling and gain some insights into my moods.
 - [zetcode.com](https://zetcode.com/kotlin/writefile/)
 - [stackoverflow.com](https://stackoverflow.com/questions/77002137/serializer-has-not-been-found-for-type-localdate)
 - [digitalocean.com](https://www.digitalocean.com/community/tutorials/kotlin-print-println-readline-scanner-repl)
+- [geeksforgeeks.org](https://geeksforgeeks.org/kotlin-when-expression/)
 # Future Work
 - Tie this into a database to more easily query the data, especially when getting the Insights for the moods
 - Add a way for the user to delete a entry
