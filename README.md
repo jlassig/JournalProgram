@@ -1,6 +1,6 @@
 # Overview
 This software, written in Kotlin, is used to help a user to 
-Journal. There are two options for entries. 
+write in their journal. There are two options for entries. 
 One where the program picks a random prompt and the user then
 writes to this prompt. 
 Another is where the user enters their mood and what they were
