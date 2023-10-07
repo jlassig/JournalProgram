@@ -5,6 +5,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 //https://stackoverflow.com/questions/77002137/serializer-has-not-been-found-for-type-localdate
+//https://www.baeldung.com/kotlin/kotlinx-serialization-project
 //this class is to serialize and deserialize the date
 @OptIn(ExperimentalSerializationApi::class)
 @Serializer(forClass = LocalDate::class)

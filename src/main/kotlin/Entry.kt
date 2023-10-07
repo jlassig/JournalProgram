@@ -6,10 +6,9 @@ import java.time.LocalDate
 data class Entry (
     @Serializable(with = LocalDateSerializer::class)
     val entryDate: LocalDate,
-    val mood: String?,
-    val moodItem: String?,
-    val promptInfo: String?,
+    val mood: String,
+    val moodItem: String,
+    val promptInfo: String,
     val entryText: String?
-
 )
 

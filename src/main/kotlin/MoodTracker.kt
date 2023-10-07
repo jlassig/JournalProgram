@@ -148,7 +148,7 @@ class MoodTracker {
 
     //this function pulls back the last 6 months of data. Month's name, the user's most frequent mood and what they were most
     //often thinking about when they recorded the mood (moodItem). It returns a nice string per month.
-    fun getMostFrequent(entryList: List<Entry>, numOfMonths: Int){
+    private fun getMostFrequent(entryList: List<Entry>, numOfMonths: Int){
         //getting the most frequent mood for each month in the last 6 months
         val groupByMood = entryList.groupBy { it.mood }
         val mostFrequentMood = groupByMood.maxByOrNull { it.value.size }?.key?:"--No entries--"

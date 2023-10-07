@@ -1,17 +1,15 @@
 import java.time.LocalDate
-//import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import kotlinx.serialization.*
 import kotlinx.serialization.json.*
-
 import java.io.File
 import java.io.IOException
 
 
 class Journal {
 
-    val today = LocalDate.now()
-    val fileName = "src/main/kotlin/entries.json"
-    val entryFile = File(fileName)
+    private val today: LocalDate = LocalDate.now()
+    private val fileName = "src/main/kotlin/entries.json"
+    private val entryFile = File(fileName)
 
     //this function gets the users mood and what they are thinking about. Then a prompt is created in the prompt
     //picker which is then displayed. the user writes their entry. The date, mood, moodItem, prompt, and entry are
@@ -27,9 +25,7 @@ class Journal {
         val promptInfo = PromptPicker().createAPrompt(mood, moodItem)
         println(promptInfo)
 
-        val entryText = readLine()
-
-
+        val entryText = readlnOrNull()
         val newEntry = Entry(today, mood, moodItem, promptInfo, entryText)
         try{
             saveEntry(newEntry)
@@ -45,7 +41,7 @@ class Journal {
         val moodItem = ""
         val promptInfo = PromptPicker().getAPrompt()
         println(promptInfo)
-        val entryText = readLine()
+        val entryText = readlnOrNull()
 
 
         val newEntry = Entry(today, mood, moodItem, promptInfo, entryText)
@@ -105,6 +101,7 @@ class Journal {
 
     //this writes to the file where the entries are stored.
     private fun writeJsonFile( entries: String){
+        //https://zetcode.com/kotlin/writefile/
         try {
             entryFile.writeText(entries)
         }catch(e: IOException)
@@ -112,7 +109,7 @@ class Journal {
             println("Error writing Json info: ${e.message}")
         }
     }
-
+//gets the user's most frequent mood every month for the last 6 months.
     fun getMoodInsight(){
         val entryList = loadEntryList()
         val moodTracker = MoodTracker()

@@ -30,6 +30,7 @@ class PromptPicker {
         )
 
     //this gets a random prompt from the promptList
+    //https://www.baeldung.com/kotlin/list-get-random-item
     fun getAPrompt():String{
         val index = Random.nextInt(promptList.size)
         return (promptList[index])

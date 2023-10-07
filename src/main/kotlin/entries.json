@@ -155,16 +155,16 @@
     },
     {
         "entryDate": "2023-10-06",
-        "mood": "motivated",
-        "moodItem": "school",
-        "promptInfo": "Tell me about your school and why you're feeling motivated.",
-        "entryText": "I am graduating soon."
+        "mood": "happy",
+        "moodItem": "work",
+        "promptInfo": "Tell me about your work and why you're feeling happy.",
+        "entryText": "I had a great day today because I got a raise"
     },
     {
         "entryDate": "2023-10-06",
         "mood": "",
         "moodItem": "",
-        "promptInfo": "Write about an experience you had with one of your siblings.",
-        "entryText": "Yesterday I ate lunch with my brother at Zupa's. He told me about his new job at Microsoft and how much that means to his family. I'm so happy for him. "
+        "promptInfo": "What was the best part of my day today?",
+        "entryText": "I learned Kotlin"
     }
 ]

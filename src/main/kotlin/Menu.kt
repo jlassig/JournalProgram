@@ -3,6 +3,8 @@ class Menu {
 
     //this is our starting point that displays the menu and gets from the user which menu option to run
     fun start(){
+        println()
+        println()
         println("*****Journal Program*****")
         do{
             val menuChoice: String? = displayMenu()
@@ -25,7 +27,7 @@ class Menu {
         println("3 - Display Entries")
         println("4 - Get some Insight")
         println("5 - Quit")
-        val menuNumber: String? = readLine()
+        val menuNumber: String? = readlnOrNull()
         //checking to see if the menuNumber is null
         if(menuNumber.isNullOrBlank()){
             println("Please try again. ")
